@@ -14,8 +14,11 @@
 
 @import "./scss/fonts.scss";
 
-body {
+* {
 	box-sizing: border-box;
+}
+
+body {
 	margin: 0;
 	padding: 0;
 	color: var(--color-text-main);
@@ -26,11 +29,13 @@ body {
 	line-height: 150%;
 }
 
-svg {
-	width: auto;
-	height: auto;
+// Иконки
+.icons-arrow {
+	width: 22px;
+	height: 8px;
 }
 
+// Гриды
 .main-grid {
 	display: grid;
 	grid-template-columns: repeat(var(--grid-columns-number), var(--grid-columns-weight));
@@ -38,19 +43,32 @@ svg {
 	justify-content: center;
 }
 
+// Анимация
 .link-main {
 	transition: color 150ms ease-in-out 0ms;
 	text-decoration: none;
 	color: var(--color-text-main);
 
+	svg {
+		transition: fill 150ms ease-in-out 0ms;
+		fill: var(--color-text-main);
+	}
+
 	&:hover {
 		color: var(--color-active);
+
+		svg {
+			fill: var(--color-active);
+		}
 	}
 }
 
+// Кнопки
 .button {
+	display: inline-flex;
 	padding: 10px 25px;
 	transition: 150ms ease-in-out 0ms;
+	transition: background-color 150ms ease-in-out 0ms;
 	transition-property: color, background-color;
 	text-decoration: none;
 	letter-spacing: 0.0015em;
@@ -62,9 +80,7 @@ svg {
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 20px;
-	display: inline-flex;
 	align-items: center;
-	transition: background-color 150ms ease-in-out 0ms;
 
 	&:hover {
 		background-color: var(--color-hover);
@@ -72,8 +88,6 @@ svg {
 }
 
 .button__icons-arrow {
-	width: 22px;
-	height: 8px;
 	margin-left: 10px;
 	fill: var(--color-white);
 }
