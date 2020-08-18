@@ -1,0 +1,109 @@
+.main-manu,
+.main-manu__indent {
+	--main-manu-height: 83px;
+}
+
+.main-manu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	// width: 100%;
+	height: var(--main-manu-height);
+}
+
+.main-manu__logo {
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 22px;
+	grid-column: 1 / span 2;
+	justify-self: start;
+	align-self: center;
+}
+
+.main-manu__tel-burger {
+	display: flex;
+	grid-column: 10 / span 3;
+	justify-self: end;
+	align-self: center;
+	align-items: center;
+}
+
+.main-manu__tel {
+	margin-right: 40px;
+	letter-spacing: 0.0015em;
+	text-transform: uppercase;
+	color: var(--color-text-main);
+	font-family: Cera Pro;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+}
+
+.main-manu__burger-button {
+	position: relative;
+	width: 33px;
+	height: 33px;
+	margin: 0;
+	padding: 0;
+	cursor: pointer;
+	border: none;
+	background-color: transparent;
+
+	&::before,
+	&::after {
+		position: absolute;
+		height: 2px;
+		content: "";
+		transition: background-color 100ms ease-in-out 0ms;
+		border-radius: 2px;
+		background-color: var(--color-text-main);
+	}
+
+	&::before {
+		top: 10px;
+		left: 0;
+		width: 100%;
+	}
+
+	&::after {
+		right: 0;
+		bottom: 10px;
+		width: 55%;
+	}
+
+	&:hover::before,
+	&:hover::after {
+		background-color: var(--color-active);
+	}
+}
+
+.main-manu__indent {
+	width: 100%;
+	height: var(--main-manu-height);
+	background-color: transparent;
+}
+
+.main-manu__burger-manu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 50%;
+	background-color: var(--color-grey);
+}
+
+.burger-manu {
+}
+
+.burger-manu__wrap {
+	--grid-columns-number: 6;
+	justify-content: start;
+}
+
+.burger-manu__header {
+	grid-column: 2 / span 5;
+	display: flex;
+	align-items: center;
+}
