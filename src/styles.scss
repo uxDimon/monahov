@@ -31,6 +31,21 @@ body {
 	line-height: 150%;
 }
 
+// Заголовки
+.heading-2 {
+	font-family: "Cera Pro", serif;
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 60px;
+}
+
+.heading-3 {
+	font-family: "Cera Pro", serif;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 135%;
+}
+
 // Иконки
 .icons-arrow {
 	width: 22px;
@@ -118,4 +133,5 @@ body {
 
 @import "./scss/header.scss";
 @import "./scss/doctor.scss";
+@import "./scss/activity.scss";
 @import "./scss/footer.scss";

@@ -11,7 +11,8 @@ block content
                 span.doctor__avatar-name Монахов<br> Вячеслав<br> Валерьевич
 
             .doctor__info
-                p.doctor__info-text Врач ортопед-травматолог высшей категории, артроскопический хирург
+                h1.doctor__info-text Врач ортопед-травматолог высшей категории, артроскопический хирург 
+
                 .doctor__info-achive-wrap
                     .doctor__info-achive.achievements
                         span.achievements__number 7 348
@@ -22,10 +23,56 @@ block content
                     .doctor__info-achive.achievements
                         span.achievements__number 49
                         span.achievements__text Публикации
+
                 .doctor__info-button-wrap
                     button(href="#").button Записаться на приём
                         svg.icons-arrow.button__icons-arrow
                             use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
-                    a(href="#").button.button_clear Записаться на приём
+                    a(href="#").button.button_clear Все услуги
                         svg.icons-arrow.button__icons-arrow
                             use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+
+        article.activity
+            h2.heading-2.activity__heading Направления деятельности
+            
+            .activity__card-wrap.main-grid
+                .activity__card
+                    .activity__card-text-wrap
+                        h3.heading-3.activity__card-heading Локтевой сустав
+                        p.activity__card-text Применение внутрисуставных введений имплантов (протезов) синовиальной жидкости (гиалуроновой кислоты), лечебно-медикаментозные блокады при острых состояниях и травмах (тендинит, миозит, ушиб, синовит, боль в суставе).
+                        a(href="#").button.button_clear Подробнее
+                            svg.icons-arrow.button__icons-arrow
+                                use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    img(src="img/activity-hand-min.png", alt="Локтевой сустав", srcset="img/activity-hand@2x-min.png 2x").doctor__avatar-img
+                
+                .activity__card
+                    .activity__card-text-wrap
+                        h3.heading-3.activity__card-heading Голеностопный сустав
+                        p.activity__card-text Применение внутрисуставных введений имплантов (протезов) синовиальной жидкости (гиалуроновой кислоты), лечебно-медикаментозные блокады при острых состояниях и травмах (тендинит, миозит, ушиб, синовит, боль в суставе).
+                        a(href="#").button.button_clear Подробнее
+                            svg.icons-arrow.button__icons-arrow
+                                use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    img(src="img/activity-foot-min.png", alt="Голеностопный сустав", srcset="img/activity-foot@2x-min.png 2x").doctor__avatar-img
+                
+                .activity__card
+                    .activity__card-text-wrap
+                        h3.heading-3.activity__card-heading Коленный сустав
+                        p.activity__card-text Применение внутрисуставных введений имплантов (протезов) синовиальной жидкости (гиалуроновой кислоты), лечебно-медикаментозные блокады при острых состояниях и травмах (тендинит, миозит, ушиб, синовит, боль в суставе).
+                        a(href="#").button.button_clear Подробнее
+                            svg.icons-arrow.button__icons-arrow
+                                use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    img(src="img/activity-knee-min.png", alt="Коленный сустав", srcset="img/activity-knee@2x-min.png 2x").doctor__avatar-img
+                
+                .activity__card
+                    .activity__card-text-wrap
+                        h3.heading-3.activity__card-heading Плечевой сустав
+                        p.activity__card-text Применение внутрисуставных введений имплантов (протезов) синовиальной жидкости (гиалуроновой кислоты), лечебно-медикаментозные блокады при острых состояниях и травмах (тендинит, миозит, ушиб, синовит, боль в суставе).
+                        a(href="#").button.button_clear Подробнее
+                            svg.icons-arrow.button__icons-arrow
+                                use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    img(src="img/activity-shoulder-min.png", alt="Плечевой сустав", srcset="img/activity-shoulder@2x-min.png 2x").doctor__avatar-img
+
+            .activity__button-wrap
+                a(href="#").button.button_clear Все направления
+                    svg.icons-arrow.button__icons-arrow
+                        use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
