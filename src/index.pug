@@ -1,4 +1,31 @@
 extends components/layout.pug
 
 block content
-    h1 Hello Parcel!
+    main
+        article.doctor.main-grid
+            svg.doctor__icon-points
+                use(xlink:href="img/sprite_icons.svg#points" xmlns:xlink="http://www.w3.org/1999/xlink")
+
+            .doctor__avatar
+                img(src="img/doctor-min.jpg", alt="Монахов Вячеслав Валерьевич", srcset="img/doctor@2x-min.jpg 2x").doctor__avatar-img
+                span.doctor__avatar-name Монахов<br> Вячеслав<br> Валерьевич
+
+            .doctor__info
+                p.doctor__info-text Врач ортопед-травматолог высшей категории, артроскопический хирург
+                .doctor__info-achive-wrap
+                    .doctor__info-achive.achievements
+                        span.achievements__number 7 348
+                        span.achievements__text Операций
+                    .doctor__info-achive.achievements
+                        span.achievements__number 25
+                        span.achievements__text Лет работы
+                    .doctor__info-achive.achievements
+                        span.achievements__number 49
+                        span.achievements__text Публикации
+                .doctor__info-button-wrap
+                    button(href="#").button Записаться на приём
+                        svg.icons-arrow.button__icons-arrow
+                            use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+                    a(href="#").button.button_clear Записаться на приём
+                        svg.icons-arrow.button__icons-arrow
+                            use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
