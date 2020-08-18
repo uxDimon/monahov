@@ -51,6 +51,8 @@
 	border: none;
 	background-color: transparent;
 
+	transition: transform 150ms ease-in-out 0ms;
+
 	&::before,
 	&::after {
 		position: absolute;
@@ -59,6 +61,7 @@
 		transition: background-color 100ms ease-in-out 0ms;
 		border-radius: 2px;
 		background-color: var(--color-text-main);
+		transition: all 150ms ease-in-out 0ms;
 	}
 
 	&::before {
@@ -79,6 +82,23 @@
 	}
 }
 
+.main-manu__burger-button-cross {
+	&::before,
+	&::after {
+		width: 22px;
+		top: 50%;
+		left: 25%;
+	}
+
+	&::before {
+		transform: rotate(45deg);
+	}
+
+	&::after {
+		transform: rotate(-45deg);
+	}
+}
+
 .main-manu__indent {
 	width: 100%;
 	height: var(--main-manu-height);
@@ -95,6 +115,17 @@
 }
 
 .burger-manu {
+	// display: none;
+	visibility: hidden;
+	opacity: 0;
+	transition: display 300ms ease-in-out 0ms;
+	transition-property: visibility, opacity;
+}
+
+.burger-manu__is-active {
+	// display: block;
+	visibility: visible;
+	opacity: 1;
 }
 
 .burger-manu__wrap {
