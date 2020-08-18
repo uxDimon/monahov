@@ -5,9 +5,10 @@
 	--color-white: #fff;
 	--color-active: #0060a0;
 	--color-hover: #0076c4;
+	--color-25: rgba(0, 0, 0, 0.25);
 
 	// Размеры
-	// --content-max-weight: 1360px;
+	--content-max-weight: 1360px;
 	--grid-columns-number: 12;
 	--grid-columns-weight: 95px;
 }
@@ -93,3 +94,4 @@ body {
 }
 
 @import "./scss/header.scss";
+@import "./scss/footer.scss";
