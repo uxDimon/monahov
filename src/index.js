@@ -35,7 +35,7 @@ for (const i of tabsButton) {
 import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 import "../node_modules/tiny-slider/src/tiny-slider.scss";
 
-var slider = tns({
+var injury = tns({
 	container: ".injury__slider",
 	items: 2,
 	// fixedWidth: 325,
@@ -46,4 +46,16 @@ var slider = tns({
 	speed: 300,
 	controls: false,
 	nav: false,
+});
+
+var howWorking = tns({
+	container: ".how-working__slider",
+	items: 1,
+	autoWidth: true,
+	gutter: 250,
+	mouseDrag: true,
+	loop: false,
+	speed: 400,
+	controls: false,
+	navPosition: "bottom",
 });

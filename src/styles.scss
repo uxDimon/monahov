@@ -30,6 +30,8 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 150%;
+
+	overflow-x: hidden;
 }
 
 a {
@@ -134,10 +136,45 @@ a {
 	}
 }
 
+.button_clear_blue {
+	color: var(--color-active);
+
+	.button__icons-arrow {
+		fill: var(--color-active);
+	}
+
+	&:hover {
+		color: var(--color-hover);
+
+		.button__icons-arrow {
+			fill: var(--color-hover);
+		}
+	}
+}
+
 .button__icons-arrow {
 	transition: fill 150ms ease-in-out 0ms;
 	margin-left: 10px;
 	fill: var(--color-white);
+}
+
+// Слайдер
+.tns-nav {
+	margin-top: 46px;
+
+	button {
+		background-color: var(--color-active-light);
+		border: none;
+		margin: 0 15px 0 0;
+		padding: 0;
+		width: 8px;
+		height: 8px;
+		border-radius: 8px;
+	}
+
+	.tns-nav-active {
+		background-color: var(--color-active);
+	}
 }
 
 @import "./scss/header.scss";
@@ -145,4 +182,5 @@ a {
 @import "./scss/activity.scss";
 @import "./scss/injury.scss";
 @import "./scss/about-doctor.scss";
+@import "./scss/how-working.scss";
 @import "./scss/footer.scss";
