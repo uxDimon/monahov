@@ -59,3 +59,15 @@ var howWorking = tns({
 	controls: false,
 	navPosition: "bottom",
 });
+
+var reviews = tns({
+	container: ".reviews__slider",
+	items: 1,
+	autoWidth: true,
+	gutter: 20,
+	mouseDrag: true,
+	loop: false,
+	speed: 350,
+	controls: false,
+	navPosition: "bottom",
+});
