@@ -13,6 +13,24 @@ for (const i of burgerButton) {
 	});
 }
 
+// Табы
+const tabsButton = document.querySelectorAll(".about-doctor__tab-button");
+const tabsContainer = document.querySelectorAll(".about-doctor__tab-container");
+
+for (const i of tabsButton) {
+	i.addEventListener("click", () => {
+		for (const b of tabsButton) {
+			b.classList.remove("tab-button-active");
+		}
+		i.classList.add("tab-button-active");
+
+		for (const c of tabsContainer) {
+			c.classList.remove("tab-container-active");
+		}
+		document.querySelector("#" + i.value).classList.add("tab-container-active");
+	});
+}
+
 // Слайдер https://www.npmjs.com/package/tiny-slider
 import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 import "../node_modules/tiny-slider/src/tiny-slider.scss";

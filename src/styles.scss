@@ -5,6 +5,7 @@
 	--color-white: #fff;
 	--color-active: #0060a0;
 	--color-active-05: rgba(62, 178, 255, 0.05);
+	--color-active-light: rgba(0, 96, 160, 0.5);
 	--color-hover: #0076c4;
 	--color-25: rgba(0, 0, 0, 0.25);
 
@@ -29,6 +30,10 @@ body {
 	font-weight: normal;
 	font-style: normal;
 	line-height: 150%;
+}
+
+a {
+	color: var(--color-active);
 }
 
 // Заголовки
@@ -139,4 +144,5 @@ body {
 @import "./scss/doctor.scss";
 @import "./scss/activity.scss";
 @import "./scss/injury.scss";
+@import "./scss/about-doctor.scss";
 @import "./scss/footer.scss";
