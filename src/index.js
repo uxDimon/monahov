@@ -12,3 +12,20 @@ for (const i of burgerButton) {
 		}
 	});
 }
+
+// Слайдер https://www.npmjs.com/package/tiny-slider
+import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
+import "../node_modules/tiny-slider/src/tiny-slider.scss";
+
+var slider = tns({
+	container: ".injury__slider",
+	items: 2,
+	// fixedWidth: 325,
+	autoWidth: true,
+	gutter: 20,
+	mouseDrag: true,
+	loop: false,
+	speed: 300,
+	controls: false,
+	nav: false,
+});

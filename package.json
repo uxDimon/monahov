@@ -11,7 +11,9 @@
 		"start": "parcel src/index.pug",
 		"build-prod": "parcel build src/index.pug"
 	},
-	"dependencies": {},
+	"dependencies": {
+		"tiny-slider": "^2.9.3"
+	},
 	"devDependencies": {
 		"autoprefixer": "^9.8.6",
 		"parcel-bundler": "^1.12.4",
