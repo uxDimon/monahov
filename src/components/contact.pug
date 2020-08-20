@@ -1,0 +1,26 @@
+article.contact.main-grid
+    .contact__form.form-bot__wrap
+        h3.heading-3.form-bot__heading Вы заболели или хотите оставить обратную связь о работе врача? Свяжитесь с нами.
+        form(action="")#form1.form-bot__form
+            .form-bot__form-input-wrap
+                input(type="text", name="userName" placeholder="Ваше имя" required)#userName.form-bot__form-input
+                label(for="userName").form-bot__form-input-lable Ваше имя
+            .form-bot__form-input-wrap
+                input(type="tel", name="userPhone" placeholder="Телефон" required)#userPhone.form-bot__form-input.input-phone
+                label(for="userPhone").form-bot__form-input-lable Телефон
+            .form-bot__form-input-wrap
+                select(name="problem")#problem.form-bot__form-input.form-bot__form-select
+                    option(value="none" hidden disabled selected) Проблематика
+                    option(value="11") Проблематика
+                    option(value="12") 2
+                    option(value="13") 3
+                    option(value="14") 4
+                label(for="problem").form-bot__form-input-lable.input-lable-none Проблематика
+            .form-bot__form-input-wrap
+                textarea(type="textarea", name="message" placeholder="Сообщение")#message.form-bot__form-input
+                label(for="message").form-bot__form-input-lable Сообщение
+            p.form-bot__form-text Заполняя форму, вы соглашаетесь с правилами обработки персональных данных.
+            button(type="submit").button.form-bot__botton отправить заявку
+                svg.icons-arrow.button__icons-arrow
+                    use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
+

@@ -3,11 +3,11 @@
 }
 
 .about-doctor__img {
-	grid-column: 1 / span 5;
-	height: 603px;
 	width: 454px;
-	object-fit: cover;
+	height: 603px;
 	transform: scaleX(-1);
+	grid-column: 1 / span 5;
+	object-fit: cover;
 }
 
 .about-doctor__text-wrap {
@@ -19,13 +19,13 @@
 }
 
 .about-doctor__text {
-	font-size: 20px;
 	margin: 0;
+	font-size: 20px;
 }
 
 .about-doctor__icon-wrap {
-	margin-top: 60px;
 	display: grid;
+	margin-top: 60px;
 	grid-template-columns: 1fr 0.7fr;
 	grid-column-gap: 20px;
 	grid-row-gap: 60px;
@@ -45,8 +45,8 @@
 
 .about-doctor__icon-text {
 	font-family: "Cera Pro", sans-serif;
-	font-weight: normal;
 	font-size: 20px;
+	font-weight: normal;
 	line-height: 25px;
 }
 
@@ -57,23 +57,30 @@
 
 .about-doctor__tab-button-wrap {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	margin-bottom: 40px;
 	padding-bottom: 20px;
 	border-bottom: 1px solid var(--color-active-light);
-	margin-bottom: 40px;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .about-doctor__tab-button {
-	padding: 0;
+	//FIXME: hover
 	margin: 0;
-	background-color: transparent;
-	border: none;
-	font-family: "Cera Pro", sans-serif;
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 25px;
+	padding: 0;
+	cursor: pointer;
 	letter-spacing: 0.0015em;
+	border: none;
+	background-color: transparent;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 25px;
+	transition: colro 250ms ease-in-out 0ms;
+
+	&:hover {
+		color: var(--color-active);
+	}
 }
 
 .tab-button-active {
@@ -90,11 +97,11 @@
 }
 
 .tab-education__table-date {
-	font-family: "Cera Pro", sans-serif;
-	font-weight: 500;
-	font-size: 24px;
-	line-height: 135%;
 	padding-right: 80px;
+	font-family: "Cera Pro", sans-serif;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 135%;
 }
 
 .tab-education__table-place {
@@ -103,15 +110,15 @@
 	span {
 		display: block;
 		color: var(--color-text-main);
-		font-weight: normal;
 		font-size: 20px;
+		font-weight: normal;
 		line-height: 150%;
 	}
 }
 
 .tab-education__table-education {
-	font-weight: normal;
-	font-size: 20px;
-	line-height: 150%;
 	text-align: right;
+	font-size: 20px;
+	font-weight: normal;
+	line-height: 150%;
 }

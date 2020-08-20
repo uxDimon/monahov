@@ -31,6 +31,18 @@ for (const i of tabsButton) {
 	});
 }
 
+// Форма
+// настройка select
+const allSelect = document.querySelectorAll(".form-bot__form-select");
+for (const i of allSelect) {
+	i.addEventListener("change", () => {
+		if (i.value != "none") {
+			i.classList.add("select-on");
+			i.nextSibling.classList.remove("input-lable-none");
+		}
+	});
+}
+
 // Слайдер https://www.npmjs.com/package/tiny-slider
 import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 import "../node_modules/tiny-slider/src/tiny-slider.scss";
