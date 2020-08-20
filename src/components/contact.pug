@@ -6,7 +6,7 @@ article.contact.main-grid
                 input(type="text", name="userName" placeholder="Ваше имя" required)#userName.form-bot__form-input
                 label(for="userName").form-bot__form-input-lable Ваше имя
             .form-bot__form-input-wrap
-                input(type="tel", name="userPhone" placeholder="Телефон" required)#userPhone.form-bot__form-input.input-phone
+                input(type="tel", name="userPhone" placeholder="Телефон" min="1" required)#userPhone.form-bot__form-input.phone-mask
                 label(for="userPhone").form-bot__form-input-lable Телефон
             .form-bot__form-input-wrap
                 select(name="problem")#problem.form-bot__form-input.form-bot__form-select
@@ -23,4 +23,15 @@ article.contact.main-grid
             button(type="submit").button.form-bot__botton отправить заявку
                 svg.icons-arrow.button__icons-arrow
                     use(xlink:href="img/sprite_icons.svg#arrow" xmlns:xlink="http://www.w3.org/1999/xlink")
-
+    .contact__map-wrap
+        .contact__map
+        .contact__address-wrap
+            .contact__address
+                span.contact__address-name Клиника Reaclinic
+                span.contact__address-street г. Санкт-Петербург, ул. Ленина, д. 42
+            .contact__address
+                span.contact__address-name Клиника Medalp
+                span.contact__address-street пос. Песочный, Ленинградская ул., 54
+            .contact__tel-mail
+                a(href="mailto:best@doctor.com").contact__mail best@doctor.com
+                a(href="tel:+78127483595").contact__tel +7 (812) 748-35-95

@@ -12,6 +12,7 @@
 		"build-prod": "parcel build src/index.pug"
 	},
 	"dependencies": {
+		"imask": "^6.0.5",
 		"tiny-slider": "^2.9.3"
 	},
 	"devDependencies": {

@@ -32,6 +32,19 @@ for (const i of tabsButton) {
 }
 
 // Форма
+// const allForms = document.querySelectorAll(".form-bot__form");
+// for (const f of allForms) {
+// 	f.querySelector('button[type="submit"]').addEventListener("click", () => {
+// 		for (const i of f.querySelectorAll(".form-bot__form-input[required]")) {
+// 			if ((i.value = "")) {
+// 				i.classList.add("input-invalid");
+// 			} else {
+// 				i.classList.remove("input-invalid");
+// 			}
+// 		}
+// 	});
+// }
+
 // настройка select
 const allSelect = document.querySelectorAll(".form-bot__form-select");
 for (const i of allSelect) {
@@ -43,6 +56,21 @@ for (const i of allSelect) {
 	});
 }
 
+// Маска для телефона
+import IMask from "imask";
+document.querySelectorAll(".phone-mask").forEach((item) => {
+	let telMask = IMask(item, {
+		mask: "+{7}(000)000-00-00",
+	});
+	/*Добавление и удаление класса при снятии фокуса с data-type="tel"*/
+	telMask.on("accept", function () {
+		item.setCustomValidity("Укажите полностью номер телефона.");
+	});
+	telMask.on("complete", function () {
+		item.setCustomValidity("");
+	});
+});
+
 // Слайдер https://www.npmjs.com/package/tiny-slider
 import { tns } from "../node_modules/tiny-slider/src/tiny-slider";
 import "../node_modules/tiny-slider/src/tiny-slider.scss";
@@ -50,7 +78,6 @@ import "../node_modules/tiny-slider/src/tiny-slider.scss";
 var injury = tns({
 	container: ".injury__slider",
 	items: 2,
-	// fixedWidth: 325,
 	autoWidth: true,
 	gutter: 20,
 	mouseDrag: true,
